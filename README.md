@@ -7,9 +7,9 @@ There is a [configuration file](configurations.json) in which there are initial 
 times a go routine can be called).
 
 There are messages between client and server like: 
-- Client <Name> Connected.
-- Client <Name> made data request: <date>.
+- Client '<Name>' Connected.
+- Client '<Name>' made data request: '<date>'.
 - Server has received the request.
 - Server processes the data.
-- Server sends <response> to client.
-- Client <Name> received the response: <response>. 
+- Server sends '<response>' to client.
+- Client '<Name>' received the response: '<response>'. 
