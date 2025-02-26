@@ -13,3 +13,6 @@ There are messages between client and server like:
 - Server processes the data.
 - Server sends `<response>` to client.
 - Client `<Name>` received the response: `<response>`. 
+
+## Example Usage
+The system is tested with some basic exercises where the client sends an array of data to the server, the server processes the array and sends its response back to the client.
