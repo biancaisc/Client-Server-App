@@ -1,10 +1,11 @@
 # Client Server App 
 
-Client - Server type system (multiple clients and one server), where the data processing method on the Server is done concurrently - using go routines. 
+Client - Server type system (multiple clients and one server), where the data processing method on the Server is done concurrently - using goroutines. 
 
 ## Description
-There is a [configuration file](configurations.json) in which there are initial parameters of the program (how many elements of the data array the client can send, how many 
-times a go routine can be called).
+There is a [configuration file](configurations.json) in which there are initial parameters of the program (maximum size of the data array the client can send, maximum number of goroutines)
+
+If the number of active goroutines reaches the limit, the server waits before accepting new clients.
 
 There are messages between client and server like: 
 - Client `<Name>` Connected.
